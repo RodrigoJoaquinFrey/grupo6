@@ -24,7 +24,7 @@ h1{
 }
 
 h2{
-    color: rgb(188, 161, 5);
+    color: rgb(0, 0, 0);
     text-align: center;
 }
 h3{
@@ -62,7 +62,7 @@ div{
     border-radius: 5px;
     margin: 5px;
     padding: 5px;
-    font-size: 20px;
+    font-size: 17px;
 }
 #haceclick{
     background-color: rgb(227, 196, 21); 
