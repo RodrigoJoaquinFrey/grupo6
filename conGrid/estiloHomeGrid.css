@@ -9,7 +9,7 @@
       "Acerca-de Acerca-de Acerca-de"
       "Footer Footer Footer";
     margin: 0px;
-    background-color: rgb(241, 218, 188);
+    background-color: rgb(255, 255, 255);
     font-family: 'Alkatra', cursive;
   }
   
@@ -50,7 +50,9 @@
  }
   
   .Acerca-de { grid-area: Acerca-de;
-    color: rgb(0, 0, 0);
+    .titulo{
+      color: orange;
+    }
     text-align:center;
     font-size: 18px;
     margin: 15px;
@@ -58,14 +60,29 @@
       border: 2px solid #000000;
       padding: 10px;
       border-radius: 5px;
+      background-color: rgb(241, 218, 188);
     }
  }
-  
-  .Footer { grid-area: Footer; 
-    text-align: center;
+  .Footer { 
+    grid-area: Footer; 
+    text-align:center;
     background-image: url(img/tazas-2.jpg);
     background-position: center center;
     background-size: cover;
     padding: 15px;
+    font-size: 17px;
+    #iconos{
+      font-size: 35px;
     }
-  
+    }
+    .horarios{
+      text-align: justify;
+      color:rgb(0, 0, 0) ;
+      margin-left: 7%;
+      font-size: 20px;
+    }
+    .horariosDias{
+      text-align: justify;
+      color:rgb(241, 218, 188) ;
+      font-size: 18px;
+    }
