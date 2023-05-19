@@ -1,4 +1,5 @@
-.container {  display: grid;
+.container {  
+  display: grid;
     grid-template-columns: 0.7fr 1.8fr 1.1fr;
     grid-template-rows: 1fr 1.6fr 0.4fr;
     gap: 0px 0px;
@@ -7,7 +8,8 @@
     font-family: 'Alkatra', cursive;
   }
   
-  .Header {  display: grid;
+  .Header {  
+    display: grid;
     grid-template-columns: 1fr 2fr 0.1fr 1fr 1fr;
     grid-template-rows: 0.7fr 1.3fr 1fr;
     gap: 0px 0px;
@@ -31,9 +33,11 @@
   
 .Subtitulo { grid-area: Subtitulo;
     color: rgb(255, 255, 255);
-    text-align: center; }
+    text-align: center; 
+  }
   
-.Links { grid-area: Links;
+.Links { 
+  grid-area: Links;
     .nav {
         color: white; 
         border-radius: 5px;
@@ -42,7 +46,8 @@
         font-size: 20px;        }
  }
   
-  .Footer { grid-area: 3 / 1 / 4 / 4;
+  .Footer { 
+    grid-area: 3 / 1 / 4 / 4;
     text-align:center;
     background-image: url(img/tazas-2.jpg);
     background-position: center center;
@@ -51,6 +56,17 @@
     font-size: 17px;
     #iconos{
       font-size: 35px;
+    }
+    .horarios{
+      text-align: justify;
+      color:rgb(0, 0, 0) ;
+      margin-left: 7%;
+      font-size: 20px;
+    }
+    .horariosDias{
+      text-align: justify;
+      color:rgb(241, 218, 188) ;
+      font-size: 18px;
     }
  }
   
@@ -79,14 +95,3 @@
     font-size: 15px;
     text-align: center;
 }
-.horarios{
-    text-align: justify;
-    color:rgb(0, 0, 0) ;
-    margin-left: 7%;
-    font-size: 20px;
-  }
-  .horariosDias{
-    text-align: justify;
-    color:rgb(241, 218, 188) ;
-    font-size: 18px;
-  }
