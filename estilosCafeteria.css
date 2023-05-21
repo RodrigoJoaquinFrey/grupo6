@@ -43,6 +43,9 @@ h2{
 h3{
     color: rgb(62, 29, 6);
 }
+h4{
+    text-align: center;
+}
 
 table{
     font-size: 20px;
@@ -83,3 +86,63 @@ table{
 /* menu{ */
     /* margin: 15px; */
 /* } */
+label {
+font-weight: bold;
+ }
+ button {
+     display: inline-block;
+     padding: 5px 20px;
+     font-size: 16px;
+     text-align: center;
+     text-decoration: none;
+     border: none;
+     border-radius: 5px;
+     background-color: green;
+     color:#ffffff;
+     cursor: pointer;
+ }
+ input,  textarea {
+     border: 1px solid gray;
+     border-radius: 6px;
+     padding: 4px;
+     font-size: 16px;
+     width: 80%;
+ }
+ #gracias{
+    border-style: dotted;
+    border:4px #662106 ;
+    text-align: center;
+    width: 70%;
+ }
+ .redes a, .datos a{
+     color: #000000;
+     background-color: #ffffff00;
+ }
+ .redes a:hover, .datos a:hover {
+     color: #662106;
+     background-color: #00000000;
+ }
+ .container {  display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   gap: 0px 0px;
+   grid-auto-flow: row;
+ }
+ .main { 
+    grid-area: 2 / 1 / 3 / 4;
+}
+ .datos { 
+    grid-area: 2 / 1 / 3 / 2; 
+    width: 30%;
+    float: left;
+    text-align: center;
+ }
+ .redes{
+    text-align: center;
+    width: 30%;
+    float: left;
+ }
+ .form { 
+    grid-area: 2 / 2 / 3 / 4; 
+    width: 70%;
+    float: right;
+ }

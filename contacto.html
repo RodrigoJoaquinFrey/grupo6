@@ -9,6 +9,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alkatra:wght@500&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
     <header>
@@ -22,44 +24,92 @@
         <h1><u>Nombre de la cafeteria</u></h1>
 
     </header>
-    <menu>
-        <h2>Formulario de Registro (ES DE EJEMPLO, NO SIRVE PARA NUESTRA PAG)</h2>
-        <form action="show_data.html" target="_blank">
+    <div class="container">
+    <main class="main">
+        <h2>Contactenos</h2>
+        <h4>Dudas, sugerencias o pedidos</h4>
+        <div class="datos">
+            <h3>Nuestros Datos</h3>
+            <br>
+            <p><i class="fas fa-map-marker"></i>  Visita nuestras <a href="sucursales.html">sucursales</href></p>
+            <p><i class="fas fa-envelope">  Email:</i><a href="mailto:cafeteria@gmail.com"> cafeteria@gmail.com</a></p>
+            <p><i class="fas fa-phone"></i>  Telefono:<a href="tel:+5491123456789"> +5491123456789</a></p>
+        </div>
+        <div class="form">
+            <h3> Formulario de contacto</h3>
+            <form id="formContacto" action="form.php" onsubmit="validarForm(event)" method="post">
+
+                <label class="control-label col-sm-2" for="nombre">Nombre:</label>
+                <div class="col-sm-10">
+                <input type="text" maxlength="42" name="nombre" id="nombre" placeholder="nombre.." required> <br><br>
+                </div>
+                <label class="control-label col-sm-2" for="telefono">Telefono:</label>
+                <div class="col-sm-10">
+                <input type="tel" maxlength="16" name='telefono' id="telefono" placeholder="telefono..."><br><br>
+                </div>
+                <label class="control-label col-sm-2" for="direccion">Dirección:</label>
+                <div class="col-sm-10">
+                <input type="text" name="direccion" id="direccion" placeholder="dirección.."> <br><br>
+                </div>
+                <label class="control-label col-sm-2" for="email">Email:</label>
+                <div class="col-sm-10">
+                <input type="email" name='email' id="email" placeholder="email..." ><br><br>
+                </div>
+                <label class="control-label col-sm-2" for="asunto">Asunto:</label>
+                <div class="col-sm-10">
+                <input type="text" name="asunto" id="asunto" placeholder="asunto..."><br><br>
+                </div>
+                <label class="control-label col-sm-2" for="mensaje">Mensaje:</label>
+                <div class="col-sm-10">
+                <textarea  name="mensaje" id="mensaje" rows="3"></textarea><br><br>
+                </div>
     
-            <label for="firstname">Nombre:</label> <input type="text" name="firstname" placeholder="Ingrese su nombre.."> <br><br>
-    
-            <label for="lastname">Apellido:</label> <input type="text" name="lastname" placeholder="Ingrese su apellido.."> <br><br>
-    
-            <label for="street">Direccion:</label> <input type="text" name="address" placeholder="Ingrese su dirección.."> <br><br>
-    
-            <label for="city">Ciudad:</label> <input type="text" name="city" value="San Martin"> <br><br>
-    
-            <label for="zipcode">Codigo Postal:</label> <input type="text" name="zipcode" placeholder="Ingrese su codigo postal.."> <br><br>
-    
-            <label for="BirthDate">Fecha de Nacimiento (dd/mm/aaaa)</label> <input type="date" name="birthdate"> <br><br>
-    
-            <p>Género:
-                <input type="radio" name="gender" value="hombre" checked> Hombre
-                <input type="radio" name="gender" value="mujer" checked> Mujer
-                <input type="radio" name="gender" value="otro" checked> Otro
-            </p>
-            <p>Estudios:
-                <input type="checkbox" name="estudio" value="primarios"> Primario
-                <input type="checkbox" name="estudio" value="secundarios"> Secundario
-                <input type="checkbox" name="estudio" value="terciarios"> Terciario
-                <input type="checkbox" name="estudio" value="universitarios"> Universitario
-                <input type="checkbox" name="otro" value="primarios"> Otro
-            </p>
-            <input type="submit" value="Enviar">
-        </form>
-    
-        <p>Si haces click en el boton "Enviar", la información sera registrada, por eso le pedimos que revise los datos.</p>
-    
-    </menu>
-<footer>
-    <h3> Derechos reservados @nombredelacafeteria2023 </h3>
-    
+                <button type="submit" id="botonEnviar">Enviar <i class="fas fa-paper-plane" style="color: #ffffff;"></i></button>
+            </form>
+        </div>
+        <div id="gracias" style="display: none;"><h2>¡Gracias, Nos comunicaremos a la brevedad!</h2></div>
+        <div class="redes">
+           <h3><b>Siguenos en nuestras redes!</b></h3>
+           <p>Se parte de nuestra comunidad</p>
+           <a href="https://es-la.facebook.com/" target="_blank"><i class="fab fa-facebook fa-2x" style="color:#0570DF;"></i></a>
+           <a href="https://twitter.com/?lang=es"target="_blank"><i class="fab fa-twitter fa-2x"  style="color: #1DA1F2;"></i></a>
+           <a href="https://www.instagram.com/"  target="_blank"><i class="fab fa-instagram fa-2x" style="color:#C13584;"></i></a>
+           <a href="https://ar.linkedin.com/"    target="_blank"><i class="fab fa-linkedin fa-2x" style="color: #0a64bf;"></i></a>
+        </div>
+
+    </main>
+    </div>
+    <footer>
+        <h3> Derechos reservados @nombredelacafeteria2023 </h3>
     </footer>
+    <div id="script">
+        <script>
+            function validarForm(event) {
+            event.preventDefault();
+
+            // Obtén los valores de los campos del formulario
+            let formulario = document.getElementById('formContacto');
+            let nombre = formContacto.elements['nombre'].value;
+            let telefono = formContacto.elements['telefono'].value;
+            let direccion = formContacto.elements['direccion'].value;
+            let email = formContacto.elements['email'].value;
+            let asunto =  formContacto.elements['asunto'].value;
+            let mensaje =formContacto.elements['mensaje'].value;
+
+            // Valida los campos
+            if (nombre === '' || telefono === ''|| email === '' || asunto === ''|| mensaje === '') {
+              alert('Por favor, completa todos los campos.');
+            }
+          // Valida el formato del email
+          let emailRegex = /^\S+@\S+\.\S+$/;
+          if (!emailRegex.test(email)) {
+            alert('Por favor, ingresa un email válido.');
+          }
+            document.getElementById('formContacto').style.display = 'none';
+            document.getElementById('gracias').style.display = 'block';
+        }
+        </script>
+    </div>
     
     </body>
     </html>
