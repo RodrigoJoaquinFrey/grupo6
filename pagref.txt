@@ -5,3 +5,6 @@ https://ir-dweb.com/webdemocafe/
 https://grid.layoutit.com/?id=hHrByAA home
 https://grid.layoutit.com/?id=2ABoj6v cafe
 grid.layoutit.com?id=Tgec1oV pasteleria
+https://grid.layoutit.com/?id=Tgec1oV sucursales
+
+https://verifier.meetchopra.com/ posible API

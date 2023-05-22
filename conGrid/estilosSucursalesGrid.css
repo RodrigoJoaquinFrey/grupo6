@@ -1,20 +1,19 @@
-
 .container {  display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1.5fr 0.5fr;
+    grid-template-columns: 0.7fr 1.8fr 1.1fr;
+    grid-template-rows: 0.7fr 2fr 0.3fr;
+    grid-auto-rows: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
       "Header Header Header"
-      "Acerca-de Acerca-de Acerca-de"
+      "Sucursales Sucursales Sucursales"
       "Footer Footer Footer";
-    margin: 0px;
     font-family: 'Alkatra', cursive;
   }
   
   .Header {  display: grid;
-    grid-template-columns: 1fr 2fr 0.1fr 1fr 1fr;
-    grid-template-rows: 0.7fr 1.3fr 1fr;
+    grid-template-columns: 1fr 1.1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.9fr 1.1fr 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
@@ -28,52 +27,41 @@
     padding: 15px;
   }
   
-  .Titulo { grid-area: Titulo;
+  .Titulo { 
+    grid-area: Titulo; 
     text-align: center;
     font-size: 20px;
     color: rgb(0, 0, 0);
 }
   
-  .Subtitulo { grid-area: Subtitulo;
+.Subtitulo { 
+    grid-area: Subtitulo;
     color: rgb(255, 255, 255);
-    text-align: center; }
+    text-align: center; 
+}
   
-  .Links { grid-area: Links;
+.Links { 
+    grid-area: Links;
     .nav {
         color: white; 
         border-radius: 5px;
         margin: 5px;
         padding: 5px;
         font-size: 20px;
-        background-color:rgba(241, 218, 188, 0.607) ;  
+        background-color:rgba(241, 218, 188, 0.607) ;      
     }
- }
+}
   
-  .Acerca-de { grid-area: Acerca-de;
-    .titulo{
-      color: orange;
-    }
-    text-align:center;
-    font-size: 18px;
-    margin: 15px;
-    #cuadro{
-      border: 2px solid #000000;
-      padding: 10px;
-      border-radius: 5px;
-      background-color: rgb(241, 218, 188);
-    }
- }
-  .Footer { 
-    grid-area: Footer; 
+.Footer { 
+    grid-area: Footer;
     text-align:center;
     background-image: url(img/tazas-2.jpg);
     background-position: center center;
     background-size: cover;
-    padding: 15px;
+    padding: 5px;
     font-size: 17px;
     #iconos{
       font-size: 35px;
-    }
     }
     .horarios{
       text-align: justify;
@@ -86,3 +74,32 @@
       color:rgb(241, 218, 188) ;
       font-size: 18px;
     }
+}
+  
+  .Sucursales {  display: grid;
+    grid-template-columns: 1.1fr 1.1fr;
+    grid-template-rows: 0.5fr 2fr 2fr 2fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "TituloSucursal TituloSucursal"
+      "mapSucursal1 desc1"
+      "mapSucursal2 desc2"
+      "mapSucursal3 desc3";
+    grid-area: Sucursales;
+  }
+  
+  .TituloSucursal { grid-area: TituloSucursal; }
+  
+  .mapSucursal1 { grid-area: mapSucursal1; }
+  
+  .mapSucursal2 { grid-area: mapSucursal2; }
+  
+  .mapSucursal3 { grid-area: mapSucursal3; }
+  
+  .desc1 { grid-area: desc1; }
+  
+  .desc2 { grid-area: desc2; }
+  
+  .desc3 { grid-area: desc3; }
+  
