@@ -95,4 +95,5 @@
   .PrecioCafes { grid-area: 2 / 3 / 3 / 4; 
     font-size: 15px;
     text-align: center;
+    color: grey;
 }
