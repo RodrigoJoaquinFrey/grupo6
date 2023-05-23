@@ -1,4 +1,4 @@
-.container {  
+.container {
   display: grid;
   grid-template-columns: 0.7fr 1.8fr 1.1fr;
   grid-template-rows: 0.1fr 3fr 0.1fr;
@@ -11,131 +11,164 @@
     "Footer Footer Footer";
   font-family: 'Alkatra', cursive;
 }
-  
-  .Header {  
-    display: grid;
-    grid-template-columns: 1fr 2fr 0.1fr 1fr 1fr;
-    grid-template-rows: 0.7fr 1.3fr 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "Links Links Links Links Links"
-      ". Titulo Titulo Titulo ."
-      ". Subtitulo Subtitulo Subtitulo .";
-    grid-area: Header;
-    background-image: url(img/tazas-capuccino-1600x900.webp);
-    background-position: center center;
-    background-size: cover;
-    padding: 15px;
-  }
-  
-  .Titulo { 
-    grid-area: Titulo; 
-    text-align: center;
-    font-size: 20px;
-    color: rgb(0, 0, 0);
+
+.Header {
+  display: grid;
+  grid-template-columns: 1fr 2fr 0.1fr 1fr 1fr;
+  grid-template-rows: 0.7fr 1.3fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Links Links Links Links Links"
+    ". Titulo Titulo Titulo ."
+    ". Subtitulo Subtitulo Subtitulo .";
+  grid-area: Header;
+  background-image: url(img/tazas-capuccino-1600x900.webp);
+  background-position: center center;
+  background-size: cover;
+  padding: 15px;
 }
-  
-  .Subtitulo { 
-    grid-area: Subtitulo;
-    color: rgb(255, 255, 255);
-    text-align: center; 
+
+.Titulo {
+  grid-area: Titulo;
+  text-align: center;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
 }
-  
-  .Links { 
-    grid-area: Links;
-    .nav {
-        color: white; 
-        border-radius: 5px;
-        margin: 5px;
-        padding: 5px;
-        font-size: 20px;
-        background-color:rgba(241, 218, 188, 0.607) ;      
-    }
+
+.Subtitulo {
+  grid-area: Subtitulo;
+  color: rgb(255, 255, 255);
+  text-align: center;
 }
- .Footer { 
-    grid-area: Footer;
-    text-align:center;
-    background-image: url(img/tazas-2.jpg);
-    background-position: center center;
-    background-size: cover;
+
+.Links {
+  grid-area: Links;
+
+  .nav {
+    color: white;
+    border-radius: 5px;
+    margin: 5px;
     padding: 5px;
-    font-size: 17px;
-    #iconos{
-      font-size: 35px;
-    }
-    .horarios{
-      text-align: justify;
-      color:rgb(0, 0, 0) ;
-      margin-left: 7%;
-      font-size: 20px;
-    }
-    .horariosDias{
-      text-align: justify;
-      color:rgb(241, 218, 188) ;
-      font-size: 18px;
-    }
+    font-size: 20px;
+    background-color: rgba(241, 218, 188, 0.607);
+  }
 }
-  
-  .Pasteleria {  display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "fotoMedialuna descMedialuna precioMedialuna"
-      "fotoLemon descLemon precioLemon"
-      "fotoCheese descCheese precioCheese"
-      "fotoChoco descChoco precioChoco"
-      "fotoBrownie descBrownie precioBrownie";
-    grid-area: Pasteleria;
-    text-align: center;
+
+.Footer {
+  grid-area: Footer;
+  text-align: center;
+  background-image: url(img/tazas-2.jpg);
+  background-position: center center;
+  background-size: cover;
+  padding: 5px;
+  font-size: 17px;
+
+  #iconos {
+    font-size: 35px;
   }
-  
-  .fotoMedialuna { 
-    grid-area: fotoMedialuna; 
+
+  .horarios {
+    text-align: justify;
+    color: rgb(0, 0, 0);
+    margin-left: 7%;
+    font-size: 20px;
   }
-  img{
-    width:80%;
-    height: 80%;
+
+  .horariosDias {
+    text-align: justify;
+    color: rgb(241, 218, 188);
+    font-size: 18px;
   }
-  .descMedialuna { 
-    grid-area: descMedialuna;
-    color: orange;
-  }
-  
-  .precioMedialuna { grid-area: precioMedialuna;
-  color: grey; }
-  
-  .fotoLemon { grid-area: fotoLemon; }
-  
-  .descLemon { grid-area: descLemon; 
-  color: orange;}
-  
-  .precioLemon { grid-area: precioLemon; 
-  color: grey;}
-  
-  .fotoCheese { grid-area: fotoCheese; }
-  
-  .descCheese { grid-area: descCheese;
-  color: orange; }
-  
-  .precioCheese { grid-area: precioCheese;
-  color: grey; }
-  
-  .fotoChoco { grid-area: fotoChoco; }
-  
-  .descChoco { grid-area: descChoco;
-  color: orange; }
-  
-  .precioChoco { grid-area: precioChoco; 
-  color: grey;}
-  
-  .fotoBrownie { grid-area: fotoBrownie; }
-  
-  .descBrownie { grid-area: descBrownie;
-  color: orange; }
-  
-  .precioBrownie { grid-area: precioBrownie;
-  color: grey; }
-  
+}
+
+.Pasteleria {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "fotoMedialuna descMedialuna precioMedialuna"
+    "fotoLemon descLemon precioLemon"
+    "fotoCheese descCheese precioCheese"
+    "fotoChoco descChoco precioChoco"
+    "fotoBrownie descBrownie precioBrownie";
+  grid-area: Pasteleria;
+  text-align: center;
+}
+
+.fotoMedialuna {
+  grid-area: fotoMedialuna;
+}
+
+img {
+  width: 80%;
+  height: 80%;
+}
+
+.descMedialuna {
+  grid-area: descMedialuna;
+  color: orange;
+}
+
+.precioMedialuna {
+  grid-area: precioMedialuna;
+  color: grey;
+}
+
+.fotoLemon {
+  grid-area: fotoLemon;
+}
+
+.descLemon {
+  grid-area: descLemon;
+  color: orange;
+}
+
+.precioLemon {
+  grid-area: precioLemon;
+  color: grey;
+}
+
+.fotoCheese {
+  grid-area: fotoCheese;
+}
+
+.descCheese {
+  grid-area: descCheese;
+  color: orange;
+}
+
+.precioCheese {
+  grid-area: precioCheese;
+  color: grey;
+}
+
+.fotoChoco {
+  grid-area: fotoChoco;
+}
+
+.descChoco {
+  grid-area: descChoco;
+  color: orange;
+}
+
+.precioChoco {
+  grid-area: precioChoco;
+  color: grey;
+}
+
+.fotoBrownie {
+  grid-area: fotoBrownie;
+}
+
+.descBrownie {
+  grid-area: descBrownie;
+  color: orange;
+}
+
+.precioBrownie {
+  grid-area: precioBrownie;
+  color: grey;
+}
