@@ -1,3 +1,9 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 .container {
   display: grid;
   grid-template-columns: 0.7fr 1.8fr 1.1fr;
@@ -84,8 +90,8 @@
 
 .Sucursales {
   display: grid;
-  grid-template-columns: 1.1fr 1.1fr;
-  grid-template-rows: 0.2fr 2fr 2fr 2fr;
+  grid-template-columns: 0.5fr 1.1fr;
+  grid-template-rows: 0.5fr 2fr 2fr 2fr;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas:
@@ -170,4 +176,177 @@
   }
 
   margin: 10px;
+}
+
+/* Para Desktop XL (1200px and down) */
+@media only screen and (min-width: 1200px) {
+  .Links {
+    grid-area: Links;
+
+    .nav {
+        color: white;
+        border-radius: 10px;
+        margin: 5px;
+        padding: 5px;
+        font-size: 200%;
+        background-color: rgba(241, 218, 188, 0.607);
+    }
+}
+
+.Footer {
+    grid-area: Footer;
+    text-align: center;
+    background-image: url(img/tazas-2.jpg);
+    background-position: center center;
+    background-size: cover;
+    padding: 15px;
+    color: hsl(21, 89%, 22%);
+
+    #iconos {
+        font-size: 80px;
+    }
+
+    .horarios {
+        text-align: justify;
+        color: rgb(0, 0, 0);
+        margin-left: 7%;
+        font-size: 50px;
+    }
+
+    .horariosDias {
+        text-align: justify;
+        color: rgb(241, 218, 188);
+        font-size: 40px;
+    }
+}
+.Titulo {
+  grid-area: Titulo;
+  text-align: center;
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+  margin: 5px;
+}
+
+.Subtitulo {
+  grid-area: Subtitulo;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 25px;
+}
+
+.TituloSucursal {
+  grid-area: TituloSucursal;
+  text-align: center;
+  color: orange;
+  margin-top: 15px;
+  font-size: 20px;
+}
+
+iframe{
+  height: 800px;
+  width: 800px;
+}
+
+.Sucursales {
+  display: grid;
+  grid-template-columns: 0.5fr 1.1fr;
+  grid-template-rows: 0.5fr 2fr 2fr 2fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "TituloSucursal TituloSucursal"
+    "mapSucursal1 desc1"
+    "mapSucursal2 desc2"
+    "mapSucursal3 desc3";
+  grid-area: Sucursales;
+  font-size: 20px;
+}
+}
+
+/* Para Celular (576px and down) */
+@media only screen and (max-width: 576px) {
+
+  .Links {
+    grid-area: Links;
+
+    .nav {
+      color: white;
+      border-radius: 5px;
+      margin: 5px;
+      padding: 6px;
+      font-size: 13px;
+      background-color: rgba(241, 218, 188, 0.607);
+      margin-left: 2.5px;
+    }
+  }
+
+.Footer {
+    grid-area: Footer;
+    text-align: center;
+    background-image: url(img/tazas-2.jpg);
+    background-position: center center;
+    background-size: cover;
+    padding: 15px;
+    color: hsl(21, 89%, 22%);
+
+    #iconos {
+        font-size: 40px;
+    }
+
+    .horarios {
+        text-align: justify;
+        color: rgb(0, 0, 0);
+        margin-left: 7%;
+        font-size: 25px;
+    }
+
+    .horariosDias {
+        text-align: justify;
+        color: rgb(241, 218, 188);
+        font-size: 20px;
+    }
+}
+.Titulo {
+  grid-area: Titulo;
+  text-align: center;
+  font-size: 15px;
+  color: rgb(0, 0, 0);
+  margin: 5px;
+}
+
+.Subtitulo {
+  grid-area: Subtitulo;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 15px;
+}
+
+.TituloSucursal {
+  grid-area: TituloSucursal;
+  text-align: center;
+  color: orange;
+  margin-top: 15px;
+  font-size: 13px;
+}
+
+iframe{
+  height: 100%;
+  width: 100%;
+}
+
+.Sucursales {
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  grid-template-rows: 0.1fr 0.1fr 0fr 0fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "TituloSucursal TituloSucursal"
+    "mapSucursal1 desc1"
+    "mapSucursal2 desc2"
+    "mapSucursal3 desc3";
+  grid-area: Sucursales;
+  font-size: 13px;
+  height: 100%;
+}
 }

@@ -8,3 +8,8 @@ grid.layoutit.com?id=Tgec1oV pasteleria
 https://grid.layoutit.com/?id=Tgec1oV sucursales
 
 https://verifier.meetchopra.com/ posible API
+
+menos de 576px => Movil 
+menos de 768px => Tablet
+menos de 992px => Desktop
+menos de 1200px => Desktop XL

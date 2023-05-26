@@ -1,3 +1,9 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 .container {
   display: grid;
   grid-template-columns: 0.7fr 1.8fr 1.1fr;
@@ -70,14 +76,14 @@
 
   .horarios {
     text-align: justify;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     margin-left: 7%;
     font-size: 20px;
   }
 
   .horariosDias {
     text-align: justify;
-    color: rgb(241, 218, 188);
+    color: hsl(21, 89%, 22%);
     font-size: 18px;
   }
 }
@@ -171,4 +177,141 @@ img {
 .precioBrownie {
   grid-area: precioBrownie;
   color: grey;
+}
+
+/* Para Desktop XL (1200px and down) */
+@media only screen and (min-width: 1200px) {
+  .Titulo {
+    grid-area: Titulo;
+    text-align: center;
+    font-size: 200%;
+    color: rgb(0, 0, 0);
+  }
+  
+  .Subtitulo {
+    grid-area: Subtitulo;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 200%;
+  }
+  
+  .Links {
+    grid-area: Links;
+  
+    .nav {
+      color: white;
+      border-radius: 10px;
+      margin: 5px;
+      padding: 5px;
+      font-size: 300%;
+      background-color: rgba(241, 218, 188, 0.607);
+    }
+  }
+
+  .Footer {
+    grid-area: Footer;
+    text-align: center;
+    background-image: url(img/tazas-2.jpg);
+    background-position: center center;
+    background-size: cover;
+    padding: 15px;
+    font-size: 80px;
+    color: hsl(21, 89%, 22%);
+    #iconos {
+      font-size: 100px;
+    }
+    .horarios {
+      text-align: justify;
+      color: rgb(255, 255, 255);
+      margin-left: 7%;
+      font-size: 50px;
+    }
+  
+    .horariosDias {
+      text-align: justify;
+      color: hsl(21, 89%, 22%);
+      font-size: 30px;
+    }
+  }
+  .Pasteleria {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "fotoMedialuna descMedialuna precioMedialuna"
+      "fotoLemon descLemon precioLemon"
+      "fotoCheese descCheese precioCheese"
+      "fotoChoco descChoco precioChoco"
+      "fotoBrownie descBrownie precioBrownie";
+    grid-area: Pasteleria;
+    text-align: center;
+    font-size: 30px;
+  }
+}
+/* Para tablets (768px and down) */
+@media only screen and (min-width: 768px) {
+  .Footer {
+    grid-area: Footer;
+    text-align: center;
+    background-image: url(img/tazas-2.jpg);
+    background-position: center center;
+    background-size: cover;
+    padding: 15px;
+    font-size: 50px;
+    color: hsl(21, 89%, 22%);
+    #iconos {
+      font-size: 70px;
+    }
+    .horarios {
+      text-align: justify;
+      color: rgb(255, 255, 255);
+      margin-left: 7%;
+      font-size: 50px;
+    }
+  
+    .horariosDias {
+      text-align: justify;
+      color: hsl(21, 89%, 22%);
+      font-size: 45px;
+    }
+  }
+}
+
+/* Para Celular (576px and down) */
+@media only screen and (max-width: 576px) {
+  .Links {
+    grid-area: Links;
+
+    .nav {
+      color: white;
+      border-radius: 5px;
+      margin: 5px;
+      padding: 6px;
+      font-size: 14px;
+      background-color: rgba(241, 218, 188, 0.607);
+      margin-left: 2.5px;
+    }
+  }
+  img {
+    width: 90%;
+    height: 90%;
+  }
+  .Pasteleria {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "fotoMedialuna descMedialuna precioMedialuna"
+      "fotoLemon descLemon precioLemon"
+      "fotoCheese descCheese precioCheese"
+      "fotoChoco descChoco precioChoco"
+      "fotoBrownie descBrownie precioBrownie";
+    grid-area: Pasteleria;
+    text-align: center;
+    font-size: 13px;
+  }
 }
