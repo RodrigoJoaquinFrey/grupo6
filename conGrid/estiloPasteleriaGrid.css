@@ -184,7 +184,7 @@ img {
   .Titulo {
     grid-area: Titulo;
     text-align: center;
-    font-size: 200%;
+    font-size: 150%;
     color: rgb(0, 0, 0);
   }
   
@@ -192,7 +192,7 @@ img {
     grid-area: Subtitulo;
     color: rgb(255, 255, 255);
     text-align: center;
-    font-size: 200%;
+    font-size: 150%;
   }
   
   .Links {
@@ -203,7 +203,7 @@ img {
       border-radius: 10px;
       margin: 5px;
       padding: 5px;
-      font-size: 300%;
+      font-size: 200%;
       background-color: rgba(241, 218, 188, 0.607);
     }
   }
@@ -215,16 +215,15 @@ img {
     background-position: center center;
     background-size: cover;
     padding: 15px;
-    font-size: 80px;
     color: hsl(21, 89%, 22%);
     #iconos {
-      font-size: 100px;
+      font-size: 80px;
     }
     .horarios {
       text-align: justify;
       color: rgb(255, 255, 255);
       margin-left: 7%;
-      font-size: 50px;
+      font-size: 30px;
     }
   
     .horariosDias {
@@ -247,7 +246,7 @@ img {
       "fotoBrownie descBrownie precioBrownie";
     grid-area: Pasteleria;
     text-align: center;
-    font-size: 30px;
+    font-size: 20px;
   }
 }
 /* Para tablets (768px and down) */
@@ -262,19 +261,19 @@ img {
     font-size: 50px;
     color: hsl(21, 89%, 22%);
     #iconos {
-      font-size: 70px;
+      font-size: 50px;
     }
     .horarios {
       text-align: justify;
       color: rgb(255, 255, 255);
       margin-left: 7%;
-      font-size: 50px;
+      font-size: 40px;
     }
   
     .horariosDias {
       text-align: justify;
       color: hsl(21, 89%, 22%);
-      font-size: 45px;
+      font-size: 35px;
     }
   }
 }

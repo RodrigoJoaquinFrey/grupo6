@@ -170,7 +170,7 @@ html {
   .Titulo {
     grid-area: Titulo;
     text-align: center;
-    font-size: 150%;
+    font-size: 100%;
     color: rgb(0, 0, 0);
   }
   
@@ -178,7 +178,7 @@ html {
     grid-area: Subtitulo;
     color: rgb(255, 255, 255);
     text-align: center;
-    font-size: 150%;
+    font-size: 100%;
   }
   
   .Links {
@@ -189,7 +189,7 @@ html {
       border-radius: 10px;
       margin: 5px;
       padding: 5px;
-      font-size: 200%;
+      font-size: 150%;
       background-color: rgba(241, 218, 188, 0.607);
     }
   }
@@ -204,7 +204,7 @@ html {
     width:92%;
     height: 92%;
     text-align:center;
-    font-size: 30px;
+    font-size: 25px;
     margin-left: 4%;
 
     #cuadro {
@@ -222,10 +222,10 @@ html {
     background-position: center center;
     background-size: cover;
     padding: 15px;
-    font-size: 60px;
+    font-size: 50px;
     color: hsl(21, 89%, 22%);
     #iconos {
-      font-size: 70px;
+      font-size: 50px;
     }
   }
   

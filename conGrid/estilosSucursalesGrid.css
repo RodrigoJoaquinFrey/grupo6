@@ -188,7 +188,7 @@ body, html {
         border-radius: 10px;
         margin: 5px;
         padding: 5px;
-        font-size: 200%;
+        font-size: 150%;
         background-color: rgba(241, 218, 188, 0.607);
     }
 }
@@ -203,26 +203,26 @@ body, html {
     color: hsl(21, 89%, 22%);
 
     #iconos {
-        font-size: 80px;
+        font-size: 60px;
     }
 
     .horarios {
         text-align: justify;
         color: rgb(0, 0, 0);
         margin-left: 7%;
-        font-size: 50px;
+        font-size: 30px;
     }
 
     .horariosDias {
         text-align: justify;
         color: rgb(241, 218, 188);
-        font-size: 40px;
+        font-size: 30px;
     }
 }
 .Titulo {
   grid-area: Titulo;
   text-align: center;
-  font-size: 30px;
+  font-size: 20px;
   color: rgb(0, 0, 0);
   margin: 5px;
 }
@@ -231,7 +231,7 @@ body, html {
   grid-area: Subtitulo;
   color: rgb(255, 255, 255);
   text-align: center;
-  font-size: 25px;
+  font-size: 20px;
 }
 
 .TituloSucursal {
@@ -243,8 +243,8 @@ body, html {
 }
 
 iframe{
-  height: 800px;
-  width: 800px;
+  height: 500px;
+  width: 600px;
 }
 
 .Sucursales {
@@ -259,7 +259,7 @@ iframe{
     "mapSucursal2 desc2"
     "mapSucursal3 desc3";
   grid-area: Sucursales;
-  font-size: 20px;
+  font-size: 15px;
 }
 }
 
