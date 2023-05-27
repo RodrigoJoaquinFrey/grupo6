@@ -45,15 +45,35 @@ body, html {
 
 .Links {
   grid-area: Links;
-
-  .nav {
-    color: white;
-    border-radius: 5px;
-    margin: 5px;
-    padding: 5px;
-    font-size: 20px;
-    background-color: rgba(241, 218, 188, 0.607);
-  }
+}
+.nav {
+  color: white;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 5px;
+  font-size: 20px;
+}
+a {
+  text-decoration: none;  
+}
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+  
+  nav ul li {
+    display: inline;
+}
+  
+  nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+}
+  nav ul li a:hover {
+    background-color: #c7600091;
 }
 
 .Footer {

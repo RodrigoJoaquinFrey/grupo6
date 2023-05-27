@@ -51,6 +51,7 @@ body, html {
 
 .Links {
   grid-area: Links;
+}
   .nav {
     color: white;
     border-radius: 5px;
@@ -59,7 +60,28 @@ body, html {
     font-size: 20px;
     background-color: rgba(241, 218, 188, 0.607);
   }
+  a {
+    text-decoration: none;  
 }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+  }
+  
+  nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+  }
+  nav ul li a:hover {
+    background-color: #c7600091;
+  }
 
 .Footer {
   grid-area: Footer;
@@ -182,16 +204,15 @@ body, html {
 @media only screen and (min-width: 1200px) {
   .Links {
     grid-area: Links;
-
-    .nav {
-        color: white;
-        border-radius: 10px;
-        margin: 5px;
-        padding: 5px;
-        font-size: 200%;
-        background-color: rgba(241, 218, 188, 0.607);
+  }
+  .nav {
+   color: white;
+   border-radius: 10px;
+   margin: 5px;
+   padding: 5px;
+   font-size: 200%;
+   background-color: rgba(241, 218, 188, 0.607);
     }
-}
 
 .Footer {
     grid-area: Footer;
@@ -268,7 +289,7 @@ iframe{
 
   .Links {
     grid-area: Links;
-
+  }
     .nav {
       color: white;
       border-radius: 5px;
@@ -278,7 +299,6 @@ iframe{
       background-color: rgba(241, 218, 188, 0.607);
       margin-left: 2.5px;
     }
-  }
 
 .Footer {
     grid-area: Footer;

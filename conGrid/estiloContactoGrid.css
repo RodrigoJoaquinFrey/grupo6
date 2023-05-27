@@ -46,17 +46,39 @@ html {
 
 .Links {
     grid-area: Links;
-
-    .nav {
-        color: white;
-        border-radius: 5px;
-        margin: 5px;
-        padding: 5px;
-        font-size: 20px;
-        background-color: rgba(241, 218, 188, 0.607);
-    }
+}
+.nav {
+    color: white;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+    font-size: 20px;
+    
 }
 
+a {
+    text-decoration: none;  
+}
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+  }
+  
+  nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+  }
+  nav ul li a:hover {
+    background-color: #c7600091;
+  }
+  
 .Footer {
     grid-area: Footer;
     text-align: center;
@@ -64,7 +86,8 @@ html {
     background-position: center center;
     background-size: cover;
     padding: 15px;
-    font-size: 17px;
+    font-size: 35px;
+    color: hsl(21, 89%, 22%);
 
     #iconos {
         font-size: 35px;
@@ -118,14 +141,12 @@ textarea {
     width: 70%;
 }
 
-.redes a,
-.datos a {
+.redes a,.datos a {
     color: #000000;
     background-color: #ffffff00;
 }
 
-.redes a:hover,
-.datos a:hover {
+.redes a:hover,.datos a:hover {
     color: #662106;
     background-color: #00000000;
 }
@@ -186,16 +207,15 @@ h3 {
 @media only screen and (min-width: 1200px) {
     .Links {
         grid-area: Links;
-
+    }
         .nav {
             color: white;
             border-radius: 10px;
             margin: 5px;
             padding: 5px;
             font-size: 150%;
-            background-color: rgba(241, 218, 188, 0.607);
         }
-    }
+    
 
     .Footer {
         grid-area: Footer;
@@ -204,7 +224,7 @@ h3 {
         background-position: center center;
         background-size: cover;
         padding: 15px;
-        font-size: 80px;
+        font-size: 50px;
         color: hsl(21, 89%, 22%);
 
         #iconos {
@@ -230,17 +250,16 @@ h3 {
 @media only screen and (max-width: 576px) {
     .Links {
         grid-area: Links;
-    
+    }
         .nav {
           color: white;
           border-radius: 5px;
           margin: 5px;
           padding: 6px;
           font-size: 14px;
-          background-color: rgba(241, 218, 188, 0.607);
           margin-left: 2.5px;
         }
-      }
+      
       h3 {
         color: rgb(95, 45, 9);
         font-size: 20px;
@@ -282,7 +301,7 @@ h3 {
     background-position: center center;
     background-size: cover;
     padding: 15px;
-    font-size: 80px;
+    font-size: 17px;
     color: hsl(21, 89%, 22%);
 
     #iconos {
