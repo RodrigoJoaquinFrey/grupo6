@@ -50,37 +50,16 @@ body, html {
 
 .Links {
   grid-area: Links;
-}
+
   .nav {
     color: white;
     border-radius: 5px;
     margin: 5px;
     padding: 5px;
     font-size: 20px;
+    background-color: rgba(241, 218, 188, 0.607);
   }
-  a {
-    text-decoration: none;  
 }
-  
-  nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav ul li {
-    display: inline;
-  }
-  
-  nav ul li a {
-    color: #ffffff;
-    text-decoration: none;
-    padding: 10px;
-  }
-  nav ul li a:hover {
-    background-color: #c7600091;
-  }
-
 
 .Footer {
   grid-area: Footer;
@@ -90,7 +69,6 @@ body, html {
   background-size: cover;
   padding: 5px;
   font-size: 17px;
-  color: hsl(21, 89%, 22%);
 
   #iconos {
     font-size: 35px;
@@ -219,15 +197,16 @@ img {
   
   .Links {
     grid-area: Links;
-  }
-  .nav {
+  
+    .nav {
       color: white;
       border-radius: 10px;
       margin: 5px;
       padding: 5px;
-      font-size: 150%;
+      font-size: 200%;
+      background-color: rgba(241, 218, 188, 0.607);
     }
-  
+  }
 
   .Footer {
     grid-area: Footer;
@@ -236,7 +215,6 @@ img {
     background-position: center center;
     background-size: cover;
     padding: 15px;
-    font-size: 50px;
     color: hsl(21, 89%, 22%);
     #iconos {
       font-size: 80px;
@@ -280,7 +258,7 @@ img {
     background-position: center center;
     background-size: cover;
     padding: 15px;
-    font-size: 50px; 
+    font-size: 50px;
     color: hsl(21, 89%, 22%);
     #iconos {
       font-size: 50px;
@@ -304,15 +282,17 @@ img {
 @media only screen and (max-width: 576px) {
   .Links {
     grid-area: Links;
-  }
+
     .nav {
       color: white;
       border-radius: 5px;
       margin: 5px;
       padding: 6px;
-      font-size: 14px;
+      font-size: 13px;
+      background-color: rgba(241, 218, 188, 0.607);
       margin-left: 2.5px;
     }
+  }
   img {
     width: 90%;
     height: 90%;
