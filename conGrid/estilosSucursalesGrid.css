@@ -204,25 +204,14 @@ body, html {
 @media only screen and (min-width: 1200px) {
   .Links {
     grid-area: Links;
-<<<<<<< HEAD
   }
   .nav {
    color: white;
    border-radius: 10px;
    margin: 5px;
    padding: 5px;
-   font-size: 200%;
+   font-size: 150%;
    background-color: rgba(241, 218, 188, 0.607);
-=======
-
-    .nav {
-        color: white;
-        border-radius: 10px;
-        margin: 5px;
-        padding: 5px;
-        font-size: 150%;
-        background-color: rgba(241, 218, 188, 0.607);
->>>>>>> 6a7823fede996a090c01afcf9b535311e0f0c85a
     }
 
 .Footer {
@@ -306,7 +295,7 @@ iframe{
       border-radius: 5px;
       margin: 5px;
       padding: 6px;
-      font-size: 13px;
+      font-size: 14px;
       background-color: rgba(241, 218, 188, 0.607);
       margin-left: 2.5px;
     }

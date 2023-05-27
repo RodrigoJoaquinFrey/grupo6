@@ -225,12 +225,7 @@ img {
       border-radius: 10px;
       margin: 5px;
       padding: 5px;
-<<<<<<< HEAD
       font-size: 150%;
-=======
-      font-size: 200%;
-      background-color: rgba(241, 218, 188, 0.607);
->>>>>>> 6a7823fede996a090c01afcf9b535311e0f0c85a
     }
   
 
@@ -241,10 +236,7 @@ img {
     background-position: center center;
     background-size: cover;
     padding: 15px;
-<<<<<<< HEAD
     font-size: 50px;
-=======
->>>>>>> 6a7823fede996a090c01afcf9b535311e0f0c85a
     color: hsl(21, 89%, 22%);
     #iconos {
       font-size: 80px;
