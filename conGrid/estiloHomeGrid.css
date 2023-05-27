@@ -51,50 +51,65 @@ html {
 
 .Links {
   grid-area: Links;
-
+}
   .nav {
     color: white;
     border-radius: 5px;
     margin: 5px;
     padding: 5px;
     font-size: 20px;
-    background-color: rgba(241, 218, 188, 0.607);
   }
+  a {
+    text-decoration: none;  
 }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+  }
+  
+  nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+  }
+  nav ul li a:hover {
+    background-color: #c7600091;
+  }
+
 /* Para Celular (576px and down) */
 @media only screen and (max-width: 576px) {
   .Links {
     grid-area: Links;
-
+  }
     .nav {
       color: white;
       border-radius: 5px;
       margin: 5px;
       padding: 6px;
-      font-size: 13px;
-      background-color: rgba(241, 218, 188, 0.607);
+      font-size: 14px;
       margin-left: 2.5px;
     }
-  }
-  .Acerca-de{
-    text-align: center;
-  }
 }
 
 /* Para Desktop (992px and down) */
 @media only screen and (min-width: 992px) {
   .Links {
     grid-area: Links;
-  
+  }
     .nav {
       color: white;
       border-radius: 5px;
       margin: 5px;
       padding: 5px;
       font-size: 20px;
-      background-color: rgba(241, 218, 188, 0.607);
     }
-  }
+  
 }
 
 .Acerca-de {
@@ -149,10 +164,11 @@ html {
   padding: 15px;
   font-size: 17px;
   color: hsl(21, 89%, 22%);
+}
   #iconos {
     font-size: 35px;
   }
-}
+
 
 .horarios {
   text-align: justify;
@@ -166,9 +182,7 @@ html {
   color: hsl(21, 89%, 22%);
   font-size: 18px;
 }
-.Acerca-de{
-  text-align: center;
-}
+
 /* Para Desktop XL (1200px and down) */
 @media only screen and (min-width: 1200px) {
 
@@ -188,16 +202,15 @@ html {
   
   .Links {
     grid-area: Links;
-  
+  }
     .nav {
       color: white;
       border-radius: 10px;
       margin: 5px;
       padding: 5px;
       font-size: 150%;
-      background-color: rgba(241, 218, 188, 0.607);
     }
-  }
+  
 
   .Acerca-de {
     grid-area: Acerca-de;
@@ -229,10 +242,11 @@ html {
     padding: 15px;
     font-size: 50px;
     color: hsl(21, 89%, 22%);
+  }
     #iconos {
       font-size: 50px;
     }
-  }
+  
   
   .horarios {
     text-align: justify;

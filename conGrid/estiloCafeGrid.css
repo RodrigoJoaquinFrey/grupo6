@@ -42,7 +42,7 @@ body, html {
   
   .Links {
     grid-area: Links;
-  
+  }
     .nav {
       color: white;
       border-radius: 5px;
@@ -51,8 +51,29 @@ body, html {
       font-size: 20px;
       background-color: rgba(241, 218, 188, 0.607);
     }
+    a {
+    text-decoration: none;  
+}
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
   }
   
+  nav ul li {
+    display: inline;
+  }
+  
+  nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+  }
+  nav ul li a:hover {
+    background-color: #c7600091;
+  }
+
   .Footer {
     grid-area: 3 / 1 / 4 / 4;
     text-align: center;
@@ -198,6 +219,7 @@ body, html {
     
     .Links {
       grid-area: Links;
+    }
     
       .nav {
         color: white;
@@ -207,7 +229,7 @@ body, html {
         font-size: 150%;
         background-color: rgba(241, 218, 188, 0.607);
       }
-    }
+    
   
     .Footer {
       grid-area: 3 / 1 / 4 / 4;
@@ -220,7 +242,7 @@ body, html {
     
       #iconos {
         font-size: 50px;
-      }
+      }}
     
       .horarios {
         text-align: justify;
@@ -306,7 +328,7 @@ body, html {
 
     .Links {
       grid-area: Links;
-  
+    }
       .nav {
         color: white;
         border-radius: 5px;
@@ -316,7 +338,7 @@ body, html {
         background-color: rgba(241, 218, 188, 0.607);
         margin-left: 2.5px;
       }
-    }
+    
     Titulo {
       grid-area: Titulo;
       text-align: center;
@@ -342,7 +364,7 @@ body, html {
       #iconos {
         font-size: 30px;
       }
-    
+    }
       .horarios {
         text-align: justify;
         color: rgb(255, 255, 255);
@@ -355,7 +377,7 @@ body, html {
         color: hsl(21, 89%, 22%);
         font-size: 15px;
       }
-    }
+    
   
     img{
       width: 100%;
@@ -392,8 +414,8 @@ body, html {
     }
     .Links {
       grid-area: Links;
-    
-      .nav {
+    }
+    .nav {
         color: white;
         border-radius: 5px;
         margin: 5px;
@@ -401,7 +423,7 @@ body, html {
         font-size: 25px;
         background-color: rgba(241, 218, 188, 0.607);
       }
-    }
+    
     Titulo {
       grid-area: Titulo;
       text-align: center;
@@ -428,7 +450,7 @@ body, html {
       #iconos {
         font-size: 35px;
       }
-    
+    }
       .horarios {
         text-align: justify;
         color: rgb(255, 255, 255);
@@ -458,4 +480,4 @@ body, html {
       text-align: center;
       width: 100%;
     }
-  }
+  
