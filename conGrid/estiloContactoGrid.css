@@ -67,20 +67,20 @@ html {
     font-size: 17px;
 
     #iconos {
-        font-size: 35px;
+        font-size: 40px;
     }
 
     .horarios {
         text-align: justify;
         color: rgb(0, 0, 0);
         margin-left: 7%;
-        font-size: 20px;
+        font-size: 30px;
     }
 
     .horariosDias {
         text-align: justify;
         color: rgb(241, 218, 188);
-        font-size: 18px;
+        font-size: 25px;
     }
 }
 
@@ -236,7 +236,7 @@ h3 {
           border-radius: 5px;
           margin: 5px;
           padding: 6px;
-          font-size: 14px;
+          font-size: 13px;
           background-color: rgba(241, 218, 188, 0.607);
           margin-left: 2.5px;
         }
@@ -286,7 +286,7 @@ h3 {
     color: hsl(21, 89%, 22%);
 
     #iconos {
-        font-size: 50px;
+        font-size: 30px;
     }
 
     .horarios {
@@ -299,7 +299,7 @@ h3 {
     .horariosDias {
         text-align: justify;
         color: rgb(241, 218, 188);
-        font-size: 30px;
+        font-size: 20px;
     }
 }
 }

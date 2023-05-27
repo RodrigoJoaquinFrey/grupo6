@@ -76,6 +76,9 @@ html {
       margin-left: 2.5px;
     }
   }
+  .Acerca-de{
+    text-align: center;
+  }
 }
 
 /* Para Desktop (992px and down) */
@@ -163,7 +166,9 @@ html {
   color: hsl(21, 89%, 22%);
   font-size: 18px;
 }
-
+.Acerca-de{
+  text-align: center;
+}
 /* Para Desktop XL (1200px and down) */
 @media only screen and (min-width: 1200px) {
 
